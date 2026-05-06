@@ -1,0 +1,78 @@
+<!--
+    This is the attack dashboard page where user will review the selected targets and make the final decision of whether to launch the attack or not. The user will have the option to review information by clicking on a target which will redirect them to info page.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Proper rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Attack</title>
+    <!-- Link stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <main class="intro">
+        <div class="box-main">
+            <div class="text-center">
+                <h1 class="display-2">
+                    Launch Attack
+                </h1>
+                <!-- Display the countdown timer to create pressure -->
+                <h2 id="timer" class="display-4" style="color: #ff4444; font-weight: bold;">5.00</h2>
+                <!-- target selection options -->
+                <div class="target-container">
+                    <button class="btn btn-primary btn-lg" onclick="location.href='p1-target-info.html'">
+                        <img src="targets/sus1.png">
+                        Target 1
+                        <br>
+                        Confidence: 91.32%
+                    </button>
+                    <button class="btn btn-primary btn-lg" onclick="location.href='p1-target-info.html'">
+                        <img src="targets/sus2.png">
+                        Target 2
+                        <br>
+                        Confidence: 93.67%
+                    </button>
+                    <button class="btn btn-primary btn-lg" onclick="location.href='p1-target-info.html'">
+                        <img src="targets/sus3.png">
+                        Target 3
+                        <br>
+                        Confidence: 92.45%
+                    </button>
+                </div>
+                <!-- launch button -->
+                <button class="btn btn-primary btn-lg" onclick="location.href='p1-results.html'">
+                    Launch
+                </button>
+                <!-- "don't" option -->
+                <button class="btn btn-secondary btn-lg" onclick="location.href='p1-timeout.html'">
+                    Or don't ..?
+                </button>
+            </div>
+            <div class="info-box-l">
+                <p>
+                    It is speculated by military experts that the U.S Department of Defense’s AI systems at the
+                    moment do not autonomously execute strikes, rather it is used to accelerate the decision making
+                    process by processing large amount of data and identifying suitable targets. There is always a
+                    human in the loop, however it has been noted that speed of AI may lead to operators overwhelmed
+                    and just trusting the output of the AI.
+                </p>
+                <em>Sources: (Pandise et al., 2026), (Morgan et al., 2020)</em>
+            </div>
+            <div class="info-box-r">
+                <p>
+                    Note: this simulation DOES NOT reflect actual applications of AI in military it is simply a high
+                    likely chance of how it is used due to a transparency gap of how militaries use AI. This will be
+                    further discussed more thoroughly after simulation.
+                </p>
+    </main>
+
+    <!-- Link script to handle the 5-second decision countdown -->
+    <script src="timer.js"></script>
+</body>
+
+</html>

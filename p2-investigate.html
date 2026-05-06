@@ -1,0 +1,52 @@
+<!--
+    Dashboard for the user to select which party to investigate.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Proper rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigation Dashboard</title>
+    <!-- Link stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="intro">
+        <div class="box-main">
+            <div class="text-center">
+                <h1 class="display-2">Investigation Dashboard</h1>
+
+                <p class="display-5">
+                    Select a party involved in the kinetic targeting process to review their actions and assess their
+                    level of accountability under IHL.
+                </p>
+
+                <div class="target-container" style="grid-template-rows: auto;">
+                    <!-- Button for Commander -->
+                    <button class="btn btn-primary btn-lg" onclick="location.href='p2-inv-commander.html'">
+                        Review Commander
+                    </button>
+                    <!-- Button for Operator -->
+                    <button class="btn btn-primary btn-lg" onclick="location.href='p2-inv-operator.html'">
+                        Review Operator
+                    </button>
+                    <!-- Button for AI System -->
+                    <button class="btn btn-primary btn-lg" onclick="location.href='p2-inv-ai.html'">
+                        Review AI System
+                    </button>
+                </div>
+
+                <br><br>
+
+                <button class="btn btn-secondary btn-lg" onclick="location.href='p2-conclusion.html'">
+                    Finish Investigation
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
